@@ -1,0 +1,19 @@
+{
+  "name": "bondi",
+  "version": "1.0.0",
+  "description": "A toolset for creating scalable microfrontends with react 🚌",
+  "main": "index.js",
+  "author": "Leonel Vieyra <me@leonelv.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "bondi": "bondi"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

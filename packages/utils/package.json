@@ -1,0 +1,19 @@
+{
+  "name": "@bondi/utils",
+  "version": "0.0.1",
+  "description": "utils for microfrontends",
+  "author": "Leonel Vieyra <me@leonelv.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/utils.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

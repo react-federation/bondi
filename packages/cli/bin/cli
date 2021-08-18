@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+"use strict";
+
+const path = require("path");
+
+const tsconfigPath = path.resolve(__dirname, "../tsconfig.json");
+
+require("ts-node").register({ project: tsconfigPath });
+require("../lib/cli");

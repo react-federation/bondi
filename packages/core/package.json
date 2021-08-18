@@ -1,0 +1,26 @@
+{
+  "name": "@bondi/core",
+  "version": "0.0.1",
+  "description": "bondi core features centralized",
+  "keywords": [
+    "bondi",
+    "react",
+    "microfrontends",
+    "webpack",
+    "module-federation"
+  ],
+  "author": "Leonel Vieyra <me@leonelv.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/core.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

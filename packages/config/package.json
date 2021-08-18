@@ -1,0 +1,39 @@
+{
+  "name": "@bondi/config",
+  "version": "0.0.1",
+  "description": "configs for bondi projects",
+  "keywords": [
+    "configs",
+    "base",
+    "typescript"
+  ],
+  "author": "Leonel Vieyra <me@leonelv.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.13"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-minify": "^0.5.1",
+    "html-webpack-plugin": "^5.3.2",
+    "typescript": "^4.3.5",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

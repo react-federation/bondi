@@ -1,0 +1,3 @@
+{
+  "extends": "@bondi/config/tsconfig"
+}
