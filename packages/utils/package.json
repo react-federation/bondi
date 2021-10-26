@@ -1,11 +1,11 @@
 {
-  "name": "@bondi/utils",
-  "version": "0.0.1",
+  "name": "@bondi-js/utils",
+  "version": "0.0.28",
   "description": "utils for microfrontends",
-  "author": "Leonel Vieyra <me@leonelv.com>",
+  "author": "Leonel Vieyra <me@leonelv.com>, Pablo Sanchez <pds.gomez@gmail.com>",
   "homepage": "",
-  "license": "ISC",
-  "main": "lib/utils.js",
+  "license": "MIT",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -13,7 +13,16 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/utils"
+  },
   "scripts": {
+    "build": "tsc -p tsconfig.build.json && node ../../scripts/createPackage",
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

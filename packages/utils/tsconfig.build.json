@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "types": ["jest"],
+    "declaration": true,
+    "declarationDir": "../../dist/utils",
+    "declarationMap": true,
+    "outDir": "../../dist/utils"
+  },
+  "exclude": ["./**/tests/**.ts", "./**/tests/**.tsx"]
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "../../dist/config",
+    "declarationMap": true,
+    "outDir": "../../dist/config"
+  }
+}

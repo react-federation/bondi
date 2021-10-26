@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createDynamicComponent should show the placeholder and the loaded component 1`] = `
+<DocumentFragment>
+  <p>
+    Loading...
+  </p>
+</DocumentFragment>
+`;

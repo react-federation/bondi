@@ -1,2 +1,5 @@
 node_modules/
 dist/
+.npmrc
+coverage/
+lerna-debug.log

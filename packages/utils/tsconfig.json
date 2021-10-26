@@ -1,3 +1,7 @@
 {
-  "extends": "@bondi/config/tsconfig"
+  "extends": "@bondi-js/config/tsconfig.base",
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "types": ["jest"]
+  }
 }

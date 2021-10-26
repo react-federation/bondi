@@ -3,17 +3,51 @@
   "version": "1.0.0",
   "description": "A toolset for creating scalable microfrontends with react 🚌",
   "main": "index.js",
-  "author": "Leonel Vieyra <me@leonelv.com>",
+  "author": "Leonel Vieyra <me@leonelv.com>, Pablo Sanchez <pasanchez@prismamp.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
+    "test": "jest",
     "postinstall": "lerna bootstrap",
-    "bondi": "bondi"
+    "bondi": "bondi",
+    "lint": "eslint 'packages/**/*.{ts,tsx}' --no-error-on-unmatched-pattern",
+    "prettier": "prettier packages/**/*.{ts,tsx} --no-error-on-unmatched-pattern --write",
+    "lint-fix": "npm run lint -- --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@swc-node/jest": "^1.3.2",
+    "@testing-library/dom": "^8.6.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.23.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^7.0.0",
+    "jest": "^27.2.3",
+    "lerna": "^4.0.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "msw": "^0.35.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  },
+  "publishConfig": {
+    "registry": "http://140.82.9.217/"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@testing-library/react": "^12.1.2"
+  }
 }

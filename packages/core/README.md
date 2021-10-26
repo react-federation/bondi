@@ -1,4 +1,4 @@
-# `core`
+# `@bondi-js/core`
 
 > TODO: description
 

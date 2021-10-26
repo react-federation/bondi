@@ -1,7 +1,8 @@
 {
-  "name": "@bondi/core",
-  "version": "0.0.1",
+  "name": "@bondi-js/core",
+  "version": "0.0.7",
   "description": "bondi core features centralized",
+  "private": true,
   "keywords": [
     "bondi",
     "react",
@@ -22,5 +23,22 @@
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "envfile": "^6.17.0",
+    "fs-extra": "^10.0.0",
+    "ink-testing-library": "^2.1.0",
+    "styled-components": "^5.3.1"
+  },
+  "devDependencies": {
+    "@swc-node/jest": "^1.3.1",
+    "@testing-library/dom": "^8.2.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/cross-spawn": "^6.0.2",
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.0",
+    "jest-styled-components": "^7.0.5",
+    "ts-jest": "^27.0.5"
   }
 }

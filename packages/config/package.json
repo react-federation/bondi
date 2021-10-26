@@ -1,39 +1,58 @@
 {
-  "name": "@bondi/config",
-  "version": "0.0.1",
+  "name": "@bondi-js/config",
+  "version": "0.0.23",
   "description": "configs for bondi projects",
   "keywords": [
     "configs",
     "base",
     "typescript"
   ],
-  "author": "Leonel Vieyra <me@leonelv.com>",
+  "author": "Leonel Vieyra <me@leonelv.com>, Pablo Sanchez <pds.gomez@gmail.com>",
   "homepage": "",
-  "license": "ISC",
-  "main": "lib/config.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
+  "license": "MIT",
+  "main": "index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.build.json && node ../../scripts/createPackage && cp tsconfig.base.json ../../dist/config",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "devDependencies": {
-    "@types/node": "^16.4.13"
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/config"
   },
-  "peerDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "@babel/preset-react": "^7.14.5",
-    "@babel/preset-typescript": "^7.15.0",
-    "babel-loader": "^8.2.2",
-    "babel-preset-minify": "^0.5.1",
+  "dependencies": {
+    "@swc/core": "^1.2.78",
+    "@types/case-sensitive-paths-webpack-plugin": "^2.1.6",
+    "@types/html-webpack-plugin": "^3.2.6",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/node": "^16.4.13",
+    "@types/postcss-normalize": "^9.0.1",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-bundle-analyzer": "^4.4.1",
+    "@types/webpack-dev-server": "^3.11.5",
+    "@types/webpack-merge": "^5.0.0",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "css-loader": "^6.2.0",
+    "eslint-webpack-plugin": "^3.0.1",
     "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.2",
+    "postcss": "^7",
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-loader": "3.0.0",
+    "postcss-normalize": "8.0.1",
+    "postcss-preset-env": "6.7.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.38.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "swc-loader": "^0.1.14",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
     "typescript": "^4.3.5",
-    "webpack": "^5.49.0",
-    "webpack-cli": "^4.7.2"
+    "webpack": "^5.50.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-manifest-plugin": "^4.0.2",
+    "webpack-merge": "^5.8.0"
   }
 }
