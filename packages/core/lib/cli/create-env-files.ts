@@ -19,9 +19,9 @@ export default function createEnvFile(payload: EnvVariables, name: string) {
       }
 
       console.log("Proyecto creado");
-      process.exit(0)
     });
   } catch (err) {
+    console.log (err)
     process.exit(1)
   }
 }

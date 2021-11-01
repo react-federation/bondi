@@ -1,1 +1,1 @@
-export { onCreateRemoteTemplate, onCreateHostTemplate } from "./cli/create-templates"
+export { onCreateTemplate } from "./cli/create-templates"

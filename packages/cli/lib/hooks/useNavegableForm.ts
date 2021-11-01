@@ -17,6 +17,7 @@ export interface FormItem {
   label: string;
   options?: Item<string>[];
   index?: number
+  validator?: (value: string) => boolean
 }
 
 type UseNavegableResult = [
@@ -28,20 +29,20 @@ interface CurrentComponentProps {
   onChange: (value: any) => void,
   onSubmit: (value: any) => void,
   value: string,
-  items?: any 
+  items?: any
 }
 
 function useNavegableForm(form: FormItem[]): UseNavegableResult {
   const [index, setState] = useState<number>(0)
-  
+
   const currentItem = form[index];
-  const CurrentComponent = mapComponent[currentItem?.type] as ComponentType<CurrentComponentProps>; 
+  const CurrentComponent = mapComponent[currentItem?.type] as ComponentType<CurrentComponentProps>;
 
   const next = () => {
     setState(prev => prev + 1)
   }
-  
-  return [{ CurrentComponent, state: { ...form[index], index }}, next]
+
+  return [{ CurrentComponent, state: { ...form[index], index } }, next]
 }
 
 export default useNavegableForm

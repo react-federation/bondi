@@ -2,7 +2,6 @@
   "name": "@bondi-js/core",
   "version": "0.0.7",
   "description": "bondi core features centralized",
-  "private": true,
   "keywords": [
     "bondi",
     "react",
@@ -13,7 +12,6 @@
   "author": "Leonel Vieyra <me@leonelv.com>",
   "homepage": "",
   "license": "MIT",
-  "main": "lib/core.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

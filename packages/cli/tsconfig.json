@@ -1,3 +1,4 @@
 {
-  "extends": "@bondi-js/config/tsconfig.base"
+  "extends": "@bondi-js/config/tsconfig.base",
+  "include": ["typings.d.ts"]
 }

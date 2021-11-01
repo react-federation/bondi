@@ -2,7 +2,6 @@
   "name": "@bondi-js/cli",
   "version": "0.0.6",
   "description": "cli for bondi framework",
-  "private": true,
   "keywords": [
     "cli",
     "bondi",
@@ -44,17 +43,20 @@
     "ink-spinner": "^4.0.2",
     "ink-testing-library": "^2.1.0",
     "ink-text-input": "^4.0.1",
+    "is-var-name": "^2.0.0",
     "jest-styled-components": "^7.0.5",
     "react": "^17.0.2",
     "react-hook-form": "^7.12.2",
     "styled-components": "^5.3.1",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.0",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "which": "^2.0.2"
   },
   "devDependencies": {
     "@types/cross-spawn": "^6.0.2",
     "@types/react": "^17.0.16",
+    "@types/which": "^2.0.1",
     "jest": "^27.1.0"
   }
 }
