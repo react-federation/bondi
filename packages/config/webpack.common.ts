@@ -19,8 +19,8 @@ if (isProd) {
   jsc.minify = {
     compress: {
       unused: true
-    },
-    mangle: true
+    }
+    //  mangle: true
   }
 }
 
